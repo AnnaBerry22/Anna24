@@ -1,0 +1,12 @@
+int main()
+{
+  test_isqrt();
+  cout << "Correctness testing done." << endl;
+  time_all("Full uint32_t range:", 65536);
+  time_all("First 1/64 of uint32_t range:", 8192);
+  time_all("First 1/256 of uint32_t range:", 4096);
+  time_all("First 1/4096 of uint32_t range:", 1024);
+  cout << "Time testing done." << endl;
+  //cin.ignore();
+  return EXIT_SUCCESS;
+}
